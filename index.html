@@ -5,10 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabla de Comida Peruana</title>
     <link rel="stylesheet" href="css/css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-PLsPYj70Mhpz4AHWuKvL3Q5iS6pa1NKg7dZpFqf/rJa+fu9wPPO2cuu9NI1KoabB" crossorigin="anonymous">
 </head>
 <body>
     <h1>Tabla de Comida Peruana</h1>
+    
+    <!-- Formulario de agregar comida -->
+    <form id="formAgregarComida">
+        <h2>Agregar Comida Propia</h2>
+        <label for="nombreComida">Nombre de la Comida:</label>
+        <input type="text" id="nombreComida" name="nombreComida" required>
+
+        <label for="esFavorita">¿Es tu comida favorita?</label>
+        <select id="esFavorita" name="esFavorita">
+            <option value="si">Sí</option>
+            <option value="no">No</option>
+        </select>
+
+        <button type="submit">Agregar</button>
+    </form>
+
+    <!-- Sección de platos peruanos -->
     <section id="presidents"></section>
+    
     <script src="js/eventos.js"></script>
 </body>
 </html>

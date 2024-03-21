@@ -64,3 +64,22 @@ function mostrarPlatosPeruanos() {
 
 // Llamar a la función para mostrar los platos peruanos
 mostrarPlatosPeruanos();
+
+// Función para agregar un plato de comida
+function agregarComida(event) {
+    event.preventDefault(); // Evitar que se recargue la página al enviar el formulario
+    
+    // Obtener valores del formulario
+    const nombre = document.getElementById("nombreComida").value;
+    const esFavorita = document.getElementById("esFavorita").value === "si" ? true : false;
+
+    // Agregar el nuevo plato a la lista de platos peruanos
+    platosPeruanos.push({ nombre: nombre, esRico: esFavorita });
+
+    // Volver a mostrar los platos peruanos con el nuevo plato agregado
+    mostrarPlatosPeruanos();
+}
+
+// Agregar evento de escucha al formulario
+const formAgregarComida = document.getElementById("formAgregarComida");
+formAgregarComida.addEventListener("submit", agregarComida);

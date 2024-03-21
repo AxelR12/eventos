@@ -63,3 +63,44 @@
     color: red;
 }
 
+/* Estilo para el formulario de agregar comida */
+#formAgregarComida {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px #c3c3c370;
+}
+
+#formAgregarComida h2 {
+    margin-top: 0;
+}
+
+#formAgregarComida label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#formAgregarComida input[type="text"],
+#formAgregarComida select {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#formAgregarComida button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#formAgregarComida button:hover {
+    background-color: #0056b3;
+}
